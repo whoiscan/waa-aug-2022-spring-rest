@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <title>Phase 4 - CRUD</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-mynav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h1>Phase 4</h1></a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="d-flex bd-highlight mb-3">
+        <div class="me-auto p-2 bd-highlight"><h2>STUDENTS</h2></div>
+        <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-secondary" onclick="showStudentCreateBox()">Create</button>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">FirstName</th>
+                <th scope="col">LastName</th>
+                <th scope="col">Email</th>
+                <th scope="col">Major</th>
+                <th scope="col">Gpa</th>
+                <th scope="col">Action</th>
+            </tr>
+            </thead>
+            <tbody id="mytable">
+            <tr>
+                <th scope="row" colspan="5">Loading...</th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
